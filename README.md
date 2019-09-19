@@ -1,5 +1,7 @@
 # cybertron
 
+[![Gem Version](https://badge.fury.io/rb/cybertron.svg)](https://badge.fury.io/rb/cybertron)
+
 cybertron is a command line tool for generating, testing and publishing converters aka Codemods for Ruby.
 
 ## Installation
@@ -50,6 +52,11 @@ Example:
 
 ```
 $ cybertron generate my_transform advanced_usage
+```
+
+### Run tests for your codemod transforms
+```
+$ bundle exec rake
 ```
 
 ## Development
