@@ -1,0 +1,14 @@
+# <%= @name %>
+
+
+## Usage
+
+```rb
+codeshift -t <%= @name %>/<transform-name>/transform.rb <path>
+```
+
+## Run tests
+
+```rb
+rake
+```

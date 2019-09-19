@@ -1,0 +1,19 @@
+# <%= @name %>
+
+
+## Usage
+
+```rb
+codeshift -t <%= @name %>/transform.rb <path>
+```
+
+## Input / Output
+
+<!--FIXTURES_TOC_START-->
+* [basic-imports](#basic-imports)
+* [existing-import](#existing-import)
+* [integration-helpers](#integration-helpers)
+<!--FIXTURES_TOC_END-->
+
+<!--FIXTURES_CONTENT_START-->
+<!--FIXTURES_CONTENT_END-->
