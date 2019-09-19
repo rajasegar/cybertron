@@ -24,11 +24,32 @@ Or install it yourself as:
 ```
 $ cybertron new <project-name>
 ```
+Example:
+
+```
+$ cybertron new my_ruby_codemod
+```
 
 ### Generate a new transform
 ```
 $ cd <project-name>
 $ cybertron generate <transform-name>
+```
+
+Example:
+```
+$ cd my_ruby_codemod
+$ cybertron generate my_transform
+```
+
+### Generate a new fixture for transform
+```
+$ cybertron generate <transform-name> <fixture-name>
+```
+Example:
+
+```
+$ cybertron generate my_transform advanced_usage
 ```
 
 ## Development
