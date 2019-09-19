@@ -4,6 +4,10 @@
 
 cybertron is a command line tool for generating, testing and publishing converters aka Codemods for Ruby.
 
+**INFO**:
+You can use a tool like [codeshift](https://github.com/rajasegar/codeshift) to run your codemods/transforms against your Ruby codebase.
+For writing transforms you can also make use of the [Ruby AST Explorer](https://ruby-ast-explorer.herokuapp.com/)
+
 ## Installation
 
 Add this line to your application's Gemfile:
