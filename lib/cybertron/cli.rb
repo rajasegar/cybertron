@@ -1,16 +1,26 @@
 # frozen_string_literal: true
 
-require 'optparse'
 require 'cybertron/options'
 require 'cybertron/version'
 require 'cybertron/generate_command'
 require 'thor'
 require 'fileutils'
+require 'rspec/core/rake_task'
 
 module Cybertron
   # CLI class
   class CLI < Thor
     include Thor::Actions
+    include Thor::RakeCompat
+
+    RSpec::Core::RakeTask.new(:spec) do |t|
+      t.rspec_opts = ['--options', './.rspec']
+    end
+
+    desc 'spec', 'Run RSpec tests for your transforms'
+    def spec
+      Rake::Task['spec'].invoke
+    end
 
     def self.source_root
       File.expand_path('../templates', __dir__)
@@ -29,6 +39,5 @@ module Cybertron
 
     desc 'generate', 'Generate fixtures and transforms'
     subcommand 'generate', Generate
-
   end
 end

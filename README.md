@@ -103,7 +103,7 @@ Rakefile
 ```
 ### Run tests for your codemod transforms
 ```
-$ bundle exec rake
+$ cybertron spec
 ```
 
 ## Development
