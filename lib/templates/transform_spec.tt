@@ -9,7 +9,7 @@ RSpec.describe <%= @name.capitalize %>Transform do
         source = File.read(input)
 
         temp = Parser::CurrentRuby.parse(source)
-        rewriter = ConditionsTransform.new
+        rewriter = <%= @name.capitalize %>Transform.new
 
         buffer        = Parser::Source::Buffer.new('(example)')
         buffer.source = source
