@@ -24,7 +24,7 @@ module Cybertron
       template 'rspec.tt', "#{name}/.rspec"
       template 'spec_helper.tt', "#{name}/spec/spec_helper.rb"
       template 'Rakefile.tt', "#{name}/Rakefile"
-      template 'readme.tt', "#{name}/README.md"
+      template 'README.tt', "#{name}/README.md"
     end
 
     desc 'generate', 'Generate fixtures and transforms'

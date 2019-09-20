@@ -37,6 +37,15 @@ Example:
 ```
 $ cybertron new my_ruby_codemod
 ```
+This will create a project structure like this:
+```
+my_ruby_codemod
+| transforms
+| spec
+| | spec_helper.rb
+.rspec
+Rakefile
+```
 
 ### Generate a new transform
 ```
@@ -50,6 +59,21 @@ $ cd my_ruby_codemod
 $ cybertron generate my_transform
 ```
 
+Now the project structure will be like this:
+```
+my_ruby_codemod
+| transforms
+| | my_transform
+| | | fixtures
+| | | | basic_input.rb
+| | | | basic_output.rb
+| | | transform.rb
+| spec
+| | my_transform_spec.rb
+| | spec_helper.rb
+.rspec
+Rakefile
+```
 ### Generate a new fixture for transform
 ```
 $ cybertron generate <transform-name> <fixture-name>
@@ -60,6 +84,23 @@ Example:
 $ cybertron generate my_transform advanced_usage
 ```
 
+Now the project structure will be like this:
+```
+my_ruby_codemod
+| transforms
+| | my_transform
+| | | fixtures
+| | | | basic_input.rb
+| | | | basic_output.rb
+| | | | advanced_usage_input.rb
+| | | | advanced_usage_output.rb
+| | | transform.rb
+| spec
+| | my_transform_spec.rb
+| | spec_helper.rb
+.rspec
+Rakefile
+```
 ### Run tests for your codemod transforms
 ```
 $ bundle exec rake
