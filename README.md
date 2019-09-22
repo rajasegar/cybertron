@@ -4,7 +4,7 @@
 
 cybertron is a command line tool for generating, testing and publishing 
 [converters](https://github.com/rajasegar/awesome-ruby-ast#converters) aka 
-[Codemods](https://github.com/facebook/codemod) for Ruby.
+[Codemods](https://github.com/facebook/codemod) for Ruby inspired by [codemod-cli](https://github.com/rwjblue/codemod-cli) for Javascript by [Robert Jackson](https://github.com/rwjblue)
 
 **INFO**:
 You can use a tool like [codeshift](https://github.com/rajasegar/codeshift) to run your codemods/transforms against your Ruby codebase.
