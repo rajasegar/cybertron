@@ -12,19 +12,9 @@ For writing transforms you can also make use of the [Ruby AST Explorer](https://
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'cybertron'
+```sh
+$ gem install cybertron
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install cybertron
 
 ## Usage
 
@@ -104,6 +94,26 @@ Rakefile
 ### Run tests for your codemod transforms
 ```
 $ cybertron spec
+```
+This will run all the specs in the spec folder, by comparing the input and output
+fixtures against themselves for each and every transform.
+
+### Finding help or usage instructions
+To display the help message and usage instructions, just invoke `cybertron` 
+without any arguments
+
+```sh
+$ cybertron
+```
+
+To display help about any particular command,
+```sh
+$ cybertron help <command-name>
+```
+
+For example, to know more about the `generate` command:
+```sh
+$ cybertron help generate
 ```
 
 ## Other related tools
