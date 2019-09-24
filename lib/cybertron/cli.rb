@@ -31,10 +31,13 @@ module Cybertron
       puts "Creating new project: #{name}"
       FileUtils.mkdir_p "#{name}/transforms"
       FileUtils.mkdir_p "#{name}/spec"
-      template 'rspec.tt', "#{name}/.rspec"
-      template 'spec_helper.tt', "#{name}/spec/spec_helper.rb"
-      template 'Rakefile.tt', "#{name}/Rakefile"
-      template 'README.tt', "#{name}/README.md"
+      template 'rspec.tt', File.absolute_path("#{name}/.rspec")
+      template 'spec_helper.tt',
+        File.absolute_path("#{name}/spec/spec_helper.rb")
+      template 'Rakefile.tt',
+        File.absolute_path("#{name}/Rakefile")
+      template 'README.tt',
+        File.absolute_path("#{name}/README.md")
     end
 
     desc 'generate', 'Generate fixtures and transforms'

@@ -26,11 +26,11 @@ module Cybertron
       puts "Creating new transform: #{name}"
       FileUtils.mkdir_p "transforms/#{name}"
       FileUtils.mkdir_p "transforms/#{name}/fixtures"
-      template 'transforms/transform.tt', "transforms/#{name}/transform.rb"
-      template 'transforms/spec.tt', "spec/#{name}_spec.rb"
-      template 'transforms/fixture_input.tt', "transforms/#{name}/fixtures/basic_input.rb"
-      template 'transforms/fixture_output.tt', "transforms/#{name}/fixtures/basic_output.rb"
-      template 'transforms/README.tt', "transforms/#{name}/README.md"
+      template 'transforms/transform.tt', File.absolute_path("transforms/#{name}/transform.rb")
+      template 'transforms/spec.tt', File.absolute_path("spec/#{name}_spec.rb")
+      template 'transforms/fixture_input.tt', File.absolute_path("transforms/#{name}/fixtures/basic_input.rb")
+      template 'transforms/fixture_output.tt', File.absolute_path("transforms/#{name}/fixtures/basic_output.rb")
+      template 'transforms/README.tt', File.absolute_path("transforms/#{name}/README.md")
     end
 
     desc 'fixture <transform-name> <fixture-name>', 'Generate a new fixture for a transform'
@@ -38,8 +38,8 @@ module Cybertron
       @codemod = codemod
       @name = name
       puts "Creating new fixture: #{name} for #{codemod}"
-      template 'transforms/fixture_input.tt', "transforms/#{codemod}/fixtures/#{name}_input.rb"
-      template 'transforms/fixture_output.tt', "transforms/#{codemod}/fixtures/#{name}_output.rb"
+      template 'transforms/fixture_input.tt', File.absolute_path("transforms/#{codemod}/fixtures/#{name}_input.rb")
+      template 'transforms/fixture_output.tt', File.absolute_path("transforms/#{codemod}/fixtures/#{name}_output.rb")
     end
 
 
