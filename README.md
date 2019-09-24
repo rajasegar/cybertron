@@ -1,6 +1,10 @@
 # cybertron
 
 [![Gem Version](https://badge.fury.io/rb/cybertron.svg)](https://badge.fury.io/rb/cybertron)
+[![Build Status](https://travis-ci.org/rajasegar/cybertron.svg?branch=master)](https://travis-ci.org/rajasegar/cybertron) 
+![](https://ruby-gem-downloads-badge.herokuapp.com/cybertron?type=total&style=plastic&color=brightgreen&total_label=)
+[![Coverage Status](https://coveralls.io/repos/github/rajasegar/cybertron/badge.svg?branch=master)](https://coveralls.io/github/rajasegar/cybertron?branch=master)
+
 
 cybertron is a command line tool for generating, testing and publishing 
 [converters](https://github.com/rajasegar/awesome-ruby-ast#converters) aka 
