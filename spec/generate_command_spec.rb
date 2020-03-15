@@ -1,7 +1,7 @@
 require 'cybertron/cli'
 require 'cybertron/generate_command'
 
-RSpec.describe "Generate" do
+RSpec.describe 'Generate' do
 
   before do
     FileUtils.rm_rf('/tmp/codemod')
@@ -11,7 +11,7 @@ RSpec.describe "Generate" do
     end
   end
 
-  it "does generate transform" do
+  it 'does generate transform' do
     generate = Cybertron::Generate.new
     Dir.chdir('/tmp/codemod') do
       generate.transform 'sample'
