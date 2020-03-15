@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cybertron (0.2.4)
+    cybertron (0.2.5)
       parser (~> 2.6)
       rspec (~> 3.0)
       thor
