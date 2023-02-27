@@ -44,13 +44,13 @@ Rakefile
 ### Generate a new transform
 ```
 $ cd <project-name>
-$ cybertron generate <transform-name>
+$ cybertron generate transform <transform-name>
 ```
 
 Example:
 ```
 $ cd my_ruby_codemod
-$ cybertron generate my_transform
+$ cybertron generate transform my_transform
 ```
 
 Now the project structure will be like this:
@@ -70,12 +70,12 @@ Rakefile
 ```
 ### Generate a new fixture for transform
 ```
-$ cybertron generate <transform-name> <fixture-name>
+$ cybertron generate fixture <transform-name> <fixture-name>
 ```
 Example:
 
 ```
-$ cybertron generate my_transform advanced_usage
+$ cybertron generate fixture my_transform advanced_usage
 ```
 
 Now the project structure will be like this:
